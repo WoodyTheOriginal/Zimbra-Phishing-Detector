@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Email Phishing Detector",
+    "version": "1.0",
+    "permissions": [
+      "https://zimbra.th-brandenburg.de/*",
+      "https://webmail.th-brandenburg.de/*",
+      "storage",
+      "https://api.openai.com/*"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://zimbra.th-brandenburg.de/*","https://webmail.th-brandenburg.de/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
