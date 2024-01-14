@@ -26,4 +26,4 @@ The extension uses GPT-3.5 to analyze the content of emails to determine their l
 Contributions are welcome! Please read the contributing guidelines for more information.
 
 ## License
-[NGNU License](LICENSE)
+NGNU License
